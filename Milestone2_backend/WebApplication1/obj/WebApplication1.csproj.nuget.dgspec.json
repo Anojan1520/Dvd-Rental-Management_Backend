@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Milestone2_08-10\\Milestone2_backend\\WebApplication1\\WebApplication1.csproj": {}
+    "C:\\Users\\ut01265\\Desktop\\GitPush\\Dvd_RentalBackend\\Milestone2_backend\\WebApplication1\\WebApplication1.csproj": {}
   },
   "projects": {
-    "D:\\Milestone2_08-10\\Milestone2_backend\\WebApplication1\\WebApplication1.csproj": {
+    "C:\\Users\\ut01265\\Desktop\\GitPush\\Dvd_RentalBackend\\Milestone2_backend\\WebApplication1\\WebApplication1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Milestone2_08-10\\Milestone2_backend\\WebApplication1\\WebApplication1.csproj",
+        "projectUniqueName": "C:\\Users\\ut01265\\Desktop\\GitPush\\Dvd_RentalBackend\\Milestone2_backend\\WebApplication1\\WebApplication1.csproj",
         "projectName": "WebApplication1",
-        "projectPath": "D:\\Milestone2_08-10\\Milestone2_backend\\WebApplication1\\WebApplication1.csproj",
-        "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
-        "outputPath": "D:\\Milestone2_08-10\\Milestone2_backend\\WebApplication1\\obj\\",
+        "projectPath": "C:\\Users\\ut01265\\Desktop\\GitPush\\Dvd_RentalBackend\\Milestone2_backend\\WebApplication1\\WebApplication1.csproj",
+        "packagesPath": "C:\\Users\\ut01265\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ut01265\\Desktop\\GitPush\\Dvd_RentalBackend\\Milestone2_backend\\WebApplication1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ut01265\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -78,7 +78,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.303/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
