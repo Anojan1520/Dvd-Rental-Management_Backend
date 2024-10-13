@@ -38,7 +38,7 @@ namespace WebApplication1.Database
 
 
                 Command.CommandText = @"
-                   IF NOT EXISTS(SELECT * FROM sys.tables where name = 'Movies')
+                    IF NOT EXISTS(SELECT * FROM sys.tables where name = 'Movies')
                               BEGIN 
                                  CREATE TABLE Movies (
                                         id UNIQUEIDENTIFIER PRIMARY KEY ,
@@ -46,8 +46,8 @@ namespace WebApplication1.Database
                                         Genere NVARCHAR(29)  NOT NULL,
                                         Director NVARCHAR(20) NOT NULL ,
                                         Actor NVARCHAR(20)  NOT NULL, 
-                                        Release DATE  NOT NULL,
-                                        Images NVARCHAR(200)  NOT NULL,
+                                        Release NVARCHAR(20)  NOT NULL,
+                                        Images NVARCHAR(600)  NOT NULL,
                                         Quantity INT  NOT NULL,
                                         Price DECIMAL(10,3)  NOT NULL,
                                                         );

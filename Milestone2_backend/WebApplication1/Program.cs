@@ -42,6 +42,10 @@ namespace WebApplication1
 
 
 
+            builder.Services.AddSingleton<IMovieImage>(provider => new MovieImage(provider.GetRequiredService<IWebHostEnvironment>()));
+
+            builder.Services.AddSingleton<IMovieRepository>(provider => new MovieRepository(connectionString));
+            builder.Services.AddSingleton<IMovieService>(provider => new MovieService(provider.GetRequiredService<IMovieRepository>(), provider.GetRequiredService<IMovieImage>()));
 
 
             // Add services to the container.
