@@ -48,6 +48,9 @@ namespace WebApplication1
             builder.Services.AddSingleton<IMovieRepository>(provider => new MovieRepository(connectionString));
             builder.Services.AddSingleton<IMovieService>(provider => new MovieService(provider.GetRequiredService<IMovieRepository>(), provider.GetRequiredService<IMovieImage>()));
 
+            builder.Services.AddSingleton<IRentedItemsRepository>(provider => new RentedItemsRepository(connectionString));
+            builder.Services.AddSingleton<IRentedItemsService>(provider => new RentedItemsService(provider.GetRequiredService<IRentedItemsRepository>()));
+
 
             // Add services to the container.
 
