@@ -21,11 +21,16 @@ namespace WebApplication1.Repository
                 connectionString.Open();
                 var command = connectionString.CreateCommand();
                 command.CommandText = @"
-                            INSERT INTO RentedItems(id, MovieId, UserId) 
-                            VALUES(@id, @MovieId, @UserId)";
+                            INSERT INTO RentedItems(id, MovieId, UserId, Status, RentQuantity, RentDate, ReturnDate) 
+                            VALUES(@id, @MovieId, @UserId, @Status , @RentQuantity, @RentDate , @ReturnDate)";
                 command.Parameters.AddWithValue("@id", Guid.NewGuid());
                 command.Parameters.AddWithValue("@MovieId", rentedItems.MovieId);
                 command.Parameters.AddWithValue("@UserId", rentedItems.UserId);
+                command.Parameters.AddWithValue("@Status", rentedItems.Status);
+                command.Parameters.AddWithValue("@RentQuantity", rentedItems.RentQuantity);
+                command.Parameters.AddWithValue("@RentDate", rentedItems.RentedDate);
+                command.Parameters.AddWithValue("@ReturnDate", rentedItems.ReturnDate);
+
 
                 command.ExecuteNonQuery();
 
@@ -52,6 +57,11 @@ namespace WebApplication1.Repository
                             Id = item.GetGuid(0),
                             MovieId = item.GetGuid(1),
                             UserId = item.GetGuid(2),
+                            Status = item.GetString(3),
+                            RentQuantity = item.GetString(4),
+                            RentedDate = item.GetString(5),
+                            ReturnDate = item.GetString(6),
+                           
                         };
                         RentedItem.Add(obj);
 

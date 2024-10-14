@@ -75,6 +75,11 @@ namespace WebApplication1.Database
                                       id UNIQUEIDENTIFIER PRIMARY KEY  NOT NULL,
                                       MovieId UNIQUEIDENTIFIER  NOT NULL,
                                       UserId UNIQUEIDENTIFIER  NOT NULL,
+                                      Status NVARCHAR(20)   NOT NULL,
+                                      RentedQuantity INT   NOT NULL,
+                                      RentDate DATE  NOT NULL,
+                                      ReturnDate NVARCHAR(30)   NOT NULL,
+
                               CONSTRAINT FK_RentedItems_Movies FOREIGN KEY (MovieId) REFERENCES  Movies(id),
                               CONSTRAINT FK_RentedItems_Users FOREIGN KEY (UserId) REFERENCES  Users(id)
                          );

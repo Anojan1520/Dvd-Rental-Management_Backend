@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\UT03213\\Desktop\\Dvd_Rental\\Dvd_RentalBackend\\Milestone2_backend\\WebApplication1\\WebApplication1.csproj": {}
+    "C:\\Users\\UT03213\\Desktop\\Dvd_Rental2\\Dvd_RentalBackend\\Milestone2_backend\\WebApplication1\\WebApplication1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\UT03213\\Desktop\\Dvd_Rental\\Dvd_RentalBackend\\Milestone2_backend\\WebApplication1\\WebApplication1.csproj": {
+    "C:\\Users\\UT03213\\Desktop\\Dvd_Rental2\\Dvd_RentalBackend\\Milestone2_backend\\WebApplication1\\WebApplication1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\UT03213\\Desktop\\Dvd_Rental\\Dvd_RentalBackend\\Milestone2_backend\\WebApplication1\\WebApplication1.csproj",
+        "projectUniqueName": "C:\\Users\\UT03213\\Desktop\\Dvd_Rental2\\Dvd_RentalBackend\\Milestone2_backend\\WebApplication1\\WebApplication1.csproj",
         "projectName": "WebApplication1",
-        "projectPath": "C:\\Users\\UT03213\\Desktop\\Dvd_Rental\\Dvd_RentalBackend\\Milestone2_backend\\WebApplication1\\WebApplication1.csproj",
+        "projectPath": "C:\\Users\\UT03213\\Desktop\\Dvd_Rental2\\Dvd_RentalBackend\\Milestone2_backend\\WebApplication1\\WebApplication1.csproj",
         "packagesPath": "C:\\Users\\UT03213\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\UT03213\\Desktop\\Dvd_Rental\\Dvd_RentalBackend\\Milestone2_backend\\WebApplication1\\obj\\",
+        "outputPath": "C:\\Users\\UT03213\\Desktop\\Dvd_Rental2\\Dvd_RentalBackend\\Milestone2_backend\\WebApplication1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\UT03213\\AppData\\Roaming\\NuGet\\NuGet.Config",

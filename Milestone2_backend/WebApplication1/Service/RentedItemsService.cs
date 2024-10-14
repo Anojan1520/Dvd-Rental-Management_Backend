@@ -23,6 +23,10 @@ namespace WebApplication1.Service
             {
                 MovieId = item.MovieId,
                 UserId = item.UserId,
+                Status = item.Status,
+                RentQuantity = item.RentQuantity,
+                RentedDate = item.RentedDate,
+                ReturnDate = item.ReturnDate,
             };
             var Itemdata = _rentedItemsRepository.AddRentedItems(obj);
             return Itemdata;
@@ -39,6 +43,10 @@ namespace WebApplication1.Service
                 {
                     MovieId = item.MovieId,
                     UserId = item.UserId,
+                    Status = item.Status,
+                    RentQuantity = item.RentQuantity,
+                    RentedDate = item.RentedDate,
+                    ReturnDate = item.ReturnDate,
 
                 };
                 listrespons.Add(response);
