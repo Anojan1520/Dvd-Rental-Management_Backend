@@ -133,7 +133,7 @@ namespace WebApplication1.Repository
 
                 command.ExecuteNonQuery();
             }
-            return "Movie is deleted";
+            return "Movie is deleted Successfully...";
         }
     }
 }

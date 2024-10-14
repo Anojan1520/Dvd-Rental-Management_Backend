@@ -1,4 +1,5 @@
 
+using Microsoft.Extensions.FileProviders;
 using WebApplication1.Controller;
 using WebApplication1.Database;
 using WebApplication1.IRepository;
@@ -75,13 +76,19 @@ namespace WebApplication1
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
+
+            app.UseStaticFiles(new StaticFileOptions
+            {
+                FileProvider = new PhysicalFileProvider(Path.Combine(builder.Environment.ContentRootPath, "MovieImages")),
+                RequestPath = "/Resources"
+            });
+
             app.UseCors("AllowAllOrigins");
 
-
             app.UseHttpsRedirection();
-
+            
+            
             app.UseAuthorization();
-
 
             app.MapControllers();
 
