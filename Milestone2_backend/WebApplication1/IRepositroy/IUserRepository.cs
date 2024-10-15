@@ -9,5 +9,6 @@ namespace WebApplication1.IRepositroy
         Task<Users> GetByUserName(string UserName);
         Task<string> UpdateUser(Users user);
         Task<string> DeleteUser(Guid userid);
+        Task<Users> GetByUserID(Guid userid);
     }
 }

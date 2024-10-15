@@ -19,13 +19,12 @@ namespace WebApplication1.Service
         {
             if (user != null)
             {
-                var HashPass = HashPassword(user.password);
                 var obj = new Users
                 {
                     position = user.position,
                     firstname = user.firstname,
                     username = user.username,
-                    password = HashPass,
+                    password = user.password,
                     phone = user.phone,
                     email = user.email,
                     nic = user.nic,
@@ -92,13 +91,17 @@ namespace WebApplication1.Service
         }
         public async Task<string> DeleteUser(Guid userid)
         {
-            var data = await userRepository.DeleteUser(userid);
-            return data;
-        }
+            var User = await userRepository.GetByUserID(userid);
+            if (User != null)
+            {
+                var data = await userRepository.DeleteUser(userid);
+                return data;
 
-        public string HashPassword(string password)
-        {
-            return BCrypt.Net.BCrypt.HashPassword(password);
+            }
+            else
+            {
+                throw new Exception("Your Id is Invalid...");
+            }
         }
 
     }

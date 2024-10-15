@@ -19,26 +19,43 @@ namespace WebApplication1.Service
         public async Task<string> LoginCustomer(LoginRequest login)
         {
             var User= await userRepository.GetByUserName(login.Username);
-            if (User!=null&&login.password==User.password)
+            if (User!=null)
             {
-                var obj = new Login
+                if (User.username == login.Username && login.password == User.password)
                 {
-                    id = Guid.NewGuid(),
-                    Username = login.Username,
-                    password = login.password,
-                };
-                var data = await loginRepository.UserLogin(obj);
+                    var obj = new Login
+                    {
+                        id = Guid.NewGuid(),
+                        Username = login.Username,
+                        password = login.password,
+                    };
+                    var data = await loginRepository.UserLogin(obj);
+                    return data;
+                }
+                else
+                {
+                    return "Username or Password is Invalid..";
+                }
+            }
+            else
+            {
+                return "Username or Password is Invalid..";
+            }
+           
+        } 
+        public async Task<string> Logout(Guid id)
+        {
+            var User=userRepository.GetByUserID(id);
+            if (User!=null)
+            {
+                var data = await loginRepository.Logout(id);
                 return data;
             }
             else
             {
-                return "Login Failed";
+                return "Deleted UnSuccesfull";
             }
-        } 
-        public async Task<string> Logout(Guid id)
-        {
-            var data = await loginRepository.Logout(id);    
-            return data;
+          
         }
     }
 }

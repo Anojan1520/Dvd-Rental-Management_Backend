@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Data.SqlClient;
 using WebApplication1.DTO.Request;
 using WebApplication1.IService;
 
@@ -24,6 +25,10 @@ namespace WebApplication1.Controller
                 var ReturnData = await userService.Register(users);
                 return Ok(ReturnData);
             }
+            catch (SqlException sqlEx)
+            {
+                return BadRequest(sqlEx.Message);
+            }
             catch (Exception ex)
             {
                 return BadRequest(ex.Message);
@@ -38,6 +43,10 @@ namespace WebApplication1.Controller
                 var data =await userService.GetAllUser();
                 return Ok(data);
             }
+            catch (SqlException sqlEx)
+            {
+                return BadRequest(sqlEx.Message);
+            }
             catch (Exception ex)
             {
                 return BadRequest(ex.Message);
@@ -51,13 +60,17 @@ namespace WebApplication1.Controller
                 var data = await userService.UpdateUser(user, id);
                 return Ok(data);
             }
+            catch (SqlException sqlEx)
+            {
+                return BadRequest(sqlEx.Message);
+            }
             catch (Exception ex)
             {
                 return BadRequest(ex.Message);
             }
         }
 
-        [HttpDelete("User")]
+        [HttpDelete("User/{id}")]
         public async Task<IActionResult> DeleteUser(Guid id)
         {
             try
@@ -65,7 +78,11 @@ namespace WebApplication1.Controller
                 var data =await userService.DeleteUser(id);
                 return Ok(data);
             }
-            catch(Exception ex)
+            catch (SqlException sqlEx)
+            {
+                return BadRequest(sqlEx.Message);
+            }
+            catch (Exception ex)
             {
                 return BadRequest(ex.Message) ;
             }

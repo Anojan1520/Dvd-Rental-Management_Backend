@@ -79,6 +79,36 @@ namespace WebApplication1.Repository
                 }
             }
         }
+         public async Task<Users> GetByUserID(Guid userid)
+        {
+            using (var connection = new SqlConnection(connectionString))
+            {
+                await connection.OpenAsync();
+                var command = connection.CreateCommand();
+                command.CommandText = @"Select * from Users
+                                      where Users.id=  @UserId";
+                command.Parameters.AddWithValue("@UserId", userid);
+                using (var reader = command.ExecuteReader())
+                {
+                    if (reader.Read())
+                    {
+                        var users = new Users
+                        {
+                            id = reader.GetGuid(reader.GetOrdinal("id")),
+                            firstname = reader.GetString(reader.GetOrdinal("firstname")),
+                            username = reader.GetString(reader.GetOrdinal("username")),
+                            password = reader.GetString(reader.GetOrdinal("password")),
+                            nic = reader.GetString(reader.GetOrdinal("nic")),
+                            phone = reader.GetInt32(reader.GetOrdinal("phone")),
+                            email = reader.GetString(reader.GetOrdinal("email")),
+                        };
+                        return users;
+                    }
+                    return null;
+
+                }
+            }
+        }
 
 
         public async Task<List<Users>> GetAll()
