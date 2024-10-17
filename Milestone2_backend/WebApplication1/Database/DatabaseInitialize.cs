@@ -123,23 +123,7 @@ namespace WebApplication1.Database
                 "; 
                 Command.ExecuteNonQuery();
 
-                Command.CommandText = @"
-                     IF NOT EXISTS (SELECT * FROM sys.tables where name = 'ConfirmOrders')
-                           BEGIN 
-                             CREATE TABLE ConfirmOrders(
-                                id UNIQUEIDENTIFIER PRIMARY KEY  NOT NULL,
-                                Movie NVARCHAR(20)  NOT NULL,
-                                TotalRent  INT  NOT NULL,
-                                UserId UNIQUEIDENTIFIER  NOT NULL,
-                                RentedDate NVARCHAR(30)  NOT NULL,
-                                ReturnDate NVARCHAR(30)   NOT NULL,
-                                MovieId UNIQUEIDENTIFIER  NOT NULL,
-                         CONSTRAINT  FK_ConfirmOrders_Movies FOREIGN KEY (MovieId) REFERENCES  Movies(id),
-                         CONSTRAINT  FK_ConfirmOrders_Users FOREIGN KEY (UserId) REFERENCES  Users(id)
-                             ); 
-                          END
-                ";
-                Command.ExecuteNonQuery();
+               
             }
 
         }

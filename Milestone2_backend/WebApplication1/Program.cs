@@ -38,10 +38,6 @@ namespace WebApplication1
             builder.Services.AddSingleton<INotificationRepository>(provider => new NotificationRepository(connectionString));
             builder.Services.AddSingleton<INotificationService>(provider => new NotificationService(provider.GetRequiredService<INotificationRepository>()));
 
-            builder.Services.AddSingleton<IConfirmOrderRepository>(provider => new ConfirmOrderRepository(connectionString));
-            builder.Services.AddSingleton<IConfirmOrderService>(provider => new ConfirmOrderService(provider.GetRequiredService<IConfirmOrderRepository>()));
-
-
 
             builder.Services.AddSingleton<IMovieImage>(provider => new MovieImage(provider.GetRequiredService<IWebHostEnvironment>()));
 
