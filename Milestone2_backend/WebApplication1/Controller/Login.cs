@@ -22,11 +22,12 @@ namespace WebApplication1.Controller
             {
                 var data = await _LoginService.LoginCustomer(LoginDetails);
                 return Ok(data);
-            }catch (Exception ex)
-            {
-                  return BadRequest(ex.Message);
             }
-            
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+
         }
 
         [HttpDelete("User")]
@@ -43,5 +44,21 @@ namespace WebApplication1.Controller
             }
 
         }
+
+        [HttpGet("User")]
+        public async Task<IActionResult> GetAllLogin()
+        {
+            try
+            {
+                var data = await _LoginService.GetLoginDetails();
+                return Ok(data);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+
+        }
+
     }
 }

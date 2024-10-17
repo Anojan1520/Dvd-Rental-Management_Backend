@@ -10,5 +10,6 @@ namespace WebApplication1.IRepositroy
         Task<string> UpdateUser(Users user);
         Task<string> DeleteUser(Guid userid);
         Task<Users> GetByUserID(Guid userid);
+        public string EncryptPassword(string password);
     }
 }

@@ -7,5 +7,6 @@ namespace WebApplication1.IRepositroy
         Task<string> UserLogin(Login detail);
         Task<string> UpdateLogin(Guid id);
         Task<string> Logout(Guid id);
+        Task<List<Login>> GetLoginDetails();
     }
 }

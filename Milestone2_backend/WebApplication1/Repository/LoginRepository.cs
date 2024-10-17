@@ -16,7 +16,7 @@ namespace WebApplication1.Repository
 
         public async Task<string> UserLogin(Login detail)
         {
-            using (var connection =  new SqlConnection(connectionString))
+            using (var connection = new SqlConnection(connectionString))
             {
                 await connection.OpenAsync();
                 var command = connection.CreateCommand();
@@ -24,7 +24,7 @@ namespace WebApplication1.Repository
                         INSERT INTO LoginUsers(id,username,password)
                         VALUES (@id,@username,@password);
                 ";
-                command.Parameters.AddWithValue("@id",detail.id);
+                command.Parameters.AddWithValue("@id", detail.id);
                 command.Parameters.AddWithValue("@username", detail.Username);
                 command.Parameters.AddWithValue("@password", detail.password);
                 command.ExecuteNonQuery();
@@ -63,7 +63,30 @@ namespace WebApplication1.Repository
             }
             return "Logout Succesfull";
         }
-
+        public async Task<List<Login>> GetLoginDetails()
+        {
+            var LoginList = new List<Login>();
+            using (var connection = new SqlConnection(connectionString))
+            {
+                await connection.OpenAsync();
+                var command = connection.CreateCommand();
+                command.CommandText = @"
+                        SELECT id,username,password from LoginUsers
+                ";
+                var Reader = command.ExecuteReader();
+                while (Reader.Read())
+                {
+                    var obj = new Login
+                    {
+                        id = Reader.GetGuid(0),
+                        Username = Reader.GetString(1),
+                        password = Reader.GetString(2)
+                    };
+                    LoginList.Add(obj);
+                }
+            }
+            return LoginList;
+        }
 
     }
 }

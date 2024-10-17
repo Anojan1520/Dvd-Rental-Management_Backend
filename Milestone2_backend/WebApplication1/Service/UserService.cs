@@ -19,6 +19,7 @@ namespace WebApplication1.Service
         {
             if (user != null)
             {
+
                 var obj = new Users
                 {
                     position = user.position,
@@ -52,7 +53,7 @@ namespace WebApplication1.Service
                 {
                     id = user.id,
                     position = user.position,
-                    firstname=user.firstname,
+                    firstname = user.firstname,
                     username = user.username,
                     password = user.password,
                     phone = user.phone,
@@ -103,6 +104,7 @@ namespace WebApplication1.Service
                 throw new Exception("Your Id is Invalid...");
             }
         }
+
 
     }
 }

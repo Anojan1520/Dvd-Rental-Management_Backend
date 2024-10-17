@@ -1,49 +1,89 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\MSII\\Desktop\\Dvd_last\\Dvd_RentalBackend\\Milestone2_backend\\",
+  "WorkspaceRootPath": "D:\\FiNalBackend\\Dvd_RentalBackend\\Milestone2_backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3CA95E59-45D9-4678-BF09-2249AAE74816}|WebApplication1\\WebApplication1.csproj|c:\\users\\msii\\desktop\\dvd_last\\dvd_rentalbackend\\milestone2_backend\\webapplication1\\controller\\renteditemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3CA95E59-45D9-4678-BF09-2249AAE74816}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controller\\renteditemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3CA95E59-45D9-4678-BF09-2249AAE74816}|WebApplication1\\WebApplication1.csproj|c:\\users\\msii\\desktop\\dvd_last\\dvd_rentalbackend\\milestone2_backend\\webapplication1\\repository\\renteditemsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3CA95E59-45D9-4678-BF09-2249AAE74816}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\repository\\renteditemsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3CA95E59-45D9-4678-BF09-2249AAE74816}|WebApplication1\\WebApplication1.csproj|c:\\users\\msii\\desktop\\dvd_last\\dvd_rentalbackend\\milestone2_backend\\webapplication1\\database\\databaseinitialize.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3CA95E59-45D9-4678-BF09-2249AAE74816}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\database\\databaseinitialize.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3CA95E59-45D9-4678-BF09-2249AAE74816}|WebApplication1\\WebApplication1.csproj|c:\\users\\msii\\desktop\\dvd_last\\dvd_rentalbackend\\milestone2_backend\\webapplication1\\dto\\response\\renteditemsresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3CA95E59-45D9-4678-BF09-2249AAE74816}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\dto\\response\\renteditemsresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3CA95E59-45D9-4678-BF09-2249AAE74816}|WebApplication1\\WebApplication1.csproj|c:\\users\\msii\\desktop\\dvd_last\\dvd_rentalbackend\\milestone2_backend\\webapplication1\\iservice\\irenteditemsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3CA95E59-45D9-4678-BF09-2249AAE74816}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\iservice\\irenteditemsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3CA95E59-45D9-4678-BF09-2249AAE74816}|WebApplication1\\WebApplication1.csproj|c:\\users\\msii\\desktop\\dvd_last\\dvd_rentalbackend\\milestone2_backend\\webapplication1\\irepositroy\\irenteditemsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3CA95E59-45D9-4678-BF09-2249AAE74816}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\irepositroy\\irenteditemsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3CA95E59-45D9-4678-BF09-2249AAE74816}|WebApplication1\\WebApplication1.csproj|c:\\users\\msii\\desktop\\dvd_last\\dvd_rentalbackend\\milestone2_backend\\webapplication1\\dto\\request\\renteditemsrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3CA95E59-45D9-4678-BF09-2249AAE74816}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\dto\\request\\renteditemsrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3CA95E59-45D9-4678-BF09-2249AAE74816}|WebApplication1\\WebApplication1.csproj|c:\\users\\msii\\desktop\\dvd_last\\dvd_rentalbackend\\milestone2_backend\\webapplication1\\service\\renteditemsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3CA95E59-45D9-4678-BF09-2249AAE74816}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\service\\renteditemsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3CA95E59-45D9-4678-BF09-2249AAE74816}|WebApplication1\\WebApplication1.csproj|c:\\users\\msii\\desktop\\dvd_last\\dvd_rentalbackend\\milestone2_backend\\webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3CA95E59-45D9-4678-BF09-2249AAE74816}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3CA95E59-45D9-4678-BF09-2249AAE74816}|WebApplication1\\WebApplication1.csproj|c:\\users\\msii\\desktop\\dvd_last\\dvd_rentalbackend\\milestone2_backend\\webapplication1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{3CA95E59-45D9-4678-BF09-2249AAE74816}|WebApplication1\\WebApplication1.csproj|d:\\finalbackend\\dvd_rentalbackend\\milestone2_backend\\webapplication1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{3CA95E59-45D9-4678-BF09-2249AAE74816}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3CA95E59-45D9-4678-BF09-2249AAE74816}|WebApplication1\\WebApplication1.csproj|c:\\users\\msii\\desktop\\dvd_last\\dvd_rentalbackend\\milestone2_backend\\webapplication1\\modals\\renteditems.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3CA95E59-45D9-4678-BF09-2249AAE74816}|WebApplication1\\WebApplication1.csproj|d:\\finalbackend\\dvd_rentalbackend\\milestone2_backend\\webapplication1\\database\\databaseinitialize.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CA95E59-45D9-4678-BF09-2249AAE74816}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\database\\databaseinitialize.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CA95E59-45D9-4678-BF09-2249AAE74816}|WebApplication1\\WebApplication1.csproj|d:\\finalbackend\\dvd_rentalbackend\\milestone2_backend\\webapplication1\\service\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CA95E59-45D9-4678-BF09-2249AAE74816}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\service\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CA95E59-45D9-4678-BF09-2249AAE74816}|WebApplication1\\WebApplication1.csproj|d:\\finalbackend\\dvd_rentalbackend\\milestone2_backend\\webapplication1\\service\\loginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CA95E59-45D9-4678-BF09-2249AAE74816}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\service\\loginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CA95E59-45D9-4678-BF09-2249AAE74816}|WebApplication1\\WebApplication1.csproj|d:\\finalbackend\\dvd_rentalbackend\\milestone2_backend\\webapplication1\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CA95E59-45D9-4678-BF09-2249AAE74816}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\repository\\userrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CA95E59-45D9-4678-BF09-2249AAE74816}|WebApplication1\\WebApplication1.csproj|d:\\finalbackend\\dvd_rentalbackend\\milestone2_backend\\webapplication1\\repository\\loginrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CA95E59-45D9-4678-BF09-2249AAE74816}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\repository\\loginrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CA95E59-45D9-4678-BF09-2249AAE74816}|WebApplication1\\WebApplication1.csproj|d:\\finalbackend\\dvd_rentalbackend\\milestone2_backend\\webapplication1\\iservice\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CA95E59-45D9-4678-BF09-2249AAE74816}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\iservice\\iuserservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CA95E59-45D9-4678-BF09-2249AAE74816}|WebApplication1\\WebApplication1.csproj|d:\\finalbackend\\dvd_rentalbackend\\milestone2_backend\\webapplication1\\iservice\\iloginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CA95E59-45D9-4678-BF09-2249AAE74816}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\iservice\\iloginservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CA95E59-45D9-4678-BF09-2249AAE74816}|WebApplication1\\WebApplication1.csproj|d:\\finalbackend\\dvd_rentalbackend\\milestone2_backend\\webapplication1\\irepositroy\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CA95E59-45D9-4678-BF09-2249AAE74816}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\irepositroy\\iuserrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CA95E59-45D9-4678-BF09-2249AAE74816}|WebApplication1\\WebApplication1.csproj|d:\\finalbackend\\dvd_rentalbackend\\milestone2_backend\\webapplication1\\irepositroy\\iloginrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CA95E59-45D9-4678-BF09-2249AAE74816}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\irepositroy\\iloginrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CA95E59-45D9-4678-BF09-2249AAE74816}|WebApplication1\\WebApplication1.csproj|d:\\finalbackend\\dvd_rentalbackend\\milestone2_backend\\webapplication1\\controller\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CA95E59-45D9-4678-BF09-2249AAE74816}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controller\\userscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CA95E59-45D9-4678-BF09-2249AAE74816}|WebApplication1\\WebApplication1.csproj|d:\\finalbackend\\dvd_rentalbackend\\milestone2_backend\\webapplication1\\controller\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CA95E59-45D9-4678-BF09-2249AAE74816}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controller\\login.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CA95E59-45D9-4678-BF09-2249AAE74816}|WebApplication1\\WebApplication1.csproj|d:\\finalbackend\\dvd_rentalbackend\\milestone2_backend\\webapplication1\\controller\\renteditemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CA95E59-45D9-4678-BF09-2249AAE74816}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\controller\\renteditemscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CA95E59-45D9-4678-BF09-2249AAE74816}|WebApplication1\\WebApplication1.csproj|d:\\finalbackend\\dvd_rentalbackend\\milestone2_backend\\webapplication1\\repository\\renteditemsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CA95E59-45D9-4678-BF09-2249AAE74816}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\repository\\renteditemsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CA95E59-45D9-4678-BF09-2249AAE74816}|WebApplication1\\WebApplication1.csproj|d:\\finalbackend\\dvd_rentalbackend\\milestone2_backend\\webapplication1\\dto\\response\\renteditemsresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CA95E59-45D9-4678-BF09-2249AAE74816}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\dto\\response\\renteditemsresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CA95E59-45D9-4678-BF09-2249AAE74816}|WebApplication1\\WebApplication1.csproj|d:\\finalbackend\\dvd_rentalbackend\\milestone2_backend\\webapplication1\\iservice\\irenteditemsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CA95E59-45D9-4678-BF09-2249AAE74816}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\iservice\\irenteditemsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CA95E59-45D9-4678-BF09-2249AAE74816}|WebApplication1\\WebApplication1.csproj|d:\\finalbackend\\dvd_rentalbackend\\milestone2_backend\\webapplication1\\irepositroy\\irenteditemsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CA95E59-45D9-4678-BF09-2249AAE74816}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\irepositroy\\irenteditemsrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CA95E59-45D9-4678-BF09-2249AAE74816}|WebApplication1\\WebApplication1.csproj|d:\\finalbackend\\dvd_rentalbackend\\milestone2_backend\\webapplication1\\dto\\request\\renteditemsrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CA95E59-45D9-4678-BF09-2249AAE74816}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\dto\\request\\renteditemsrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CA95E59-45D9-4678-BF09-2249AAE74816}|WebApplication1\\WebApplication1.csproj|d:\\finalbackend\\dvd_rentalbackend\\milestone2_backend\\webapplication1\\service\\renteditemsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CA95E59-45D9-4678-BF09-2249AAE74816}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\service\\renteditemsservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CA95E59-45D9-4678-BF09-2249AAE74816}|WebApplication1\\WebApplication1.csproj|d:\\finalbackend\\dvd_rentalbackend\\milestone2_backend\\webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CA95E59-45D9-4678-BF09-2249AAE74816}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CA95E59-45D9-4678-BF09-2249AAE74816}|WebApplication1\\WebApplication1.csproj|d:\\finalbackend\\dvd_rentalbackend\\milestone2_backend\\webapplication1\\modals\\renteditems.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3CA95E59-45D9-4678-BF09-2249AAE74816}|WebApplication1\\WebApplication1.csproj|solutionrelative:webapplication1\\modals\\renteditems.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -54,135 +94,146 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 12,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 19,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\MSII\\Desktop\\Dvd_last\\Dvd_RentalBackend\\Milestone2_backend\\WebApplication1\\Program.cs",
+              "DocumentMoniker": "D:\\FiNalBackend\\Dvd_RentalBackend\\Milestone2_backend\\WebApplication1\\Program.cs",
               "RelativeDocumentMoniker": "WebApplication1\\Program.cs",
-              "ToolTip": "C:\\Users\\MSII\\Desktop\\Dvd_last\\Dvd_RentalBackend\\Milestone2_backend\\WebApplication1\\Program.cs",
+              "ToolTip": "D:\\FiNalBackend\\Dvd_RentalBackend\\Milestone2_backend\\WebApplication1\\Program.cs",
               "RelativeToolTip": "WebApplication1\\Program.cs",
               "ViewState": "AQIAABMAAAAAAAAAAAAgwF4AAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-17T08:39:30.355Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "RentedItemsResponse.cs",
-              "DocumentMoniker": "C:\\Users\\MSII\\Desktop\\Dvd_last\\Dvd_RentalBackend\\Milestone2_backend\\WebApplication1\\DTO\\Response\\RentedItemsResponse.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\DTO\\Response\\RentedItemsResponse.cs",
-              "ToolTip": "C:\\Users\\MSII\\Desktop\\Dvd_last\\Dvd_RentalBackend\\Milestone2_backend\\WebApplication1\\DTO\\Response\\RentedItemsResponse.cs",
-              "RelativeToolTip": "WebApplication1\\DTO\\Response\\RentedItemsResponse.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T16:34:01.677Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
             },
             {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "RentedItemsRequest.cs",
-              "DocumentMoniker": "C:\\Users\\MSII\\Desktop\\Dvd_last\\Dvd_RentalBackend\\Milestone2_backend\\WebApplication1\\DTO\\Request\\RentedItemsRequest.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\DTO\\Request\\RentedItemsRequest.cs",
-              "ToolTip": "C:\\Users\\MSII\\Desktop\\Dvd_last\\Dvd_RentalBackend\\Milestone2_backend\\WebApplication1\\DTO\\Request\\RentedItemsRequest.cs",
-              "RelativeToolTip": "WebApplication1\\DTO\\Request\\RentedItemsRequest.cs",
-              "ViewState": "AQIAAAQAAAAAAAAAAAA1wAwAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T16:33:41.707Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "RentedItemsController.cs",
-              "DocumentMoniker": "C:\\Users\\MSII\\Desktop\\Dvd_last\\Dvd_RentalBackend\\Milestone2_backend\\WebApplication1\\Controller\\RentedItemsController.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Controller\\RentedItemsController.cs",
-              "ToolTip": "C:\\Users\\MSII\\Desktop\\Dvd_last\\Dvd_RentalBackend\\Milestone2_backend\\WebApplication1\\Controller\\RentedItemsController.cs",
-              "RelativeToolTip": "WebApplication1\\Controller\\RentedItemsController.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAQwBMAAAAZAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T16:31:28.41Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "IRentedItemsService.cs",
-              "DocumentMoniker": "C:\\Users\\MSII\\Desktop\\Dvd_last\\Dvd_RentalBackend\\Milestone2_backend\\WebApplication1\\IService\\IRentedItemsService.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\IService\\IRentedItemsService.cs",
-              "ToolTip": "C:\\Users\\MSII\\Desktop\\Dvd_last\\Dvd_RentalBackend\\Milestone2_backend\\WebApplication1\\IService\\IRentedItemsService.cs",
-              "RelativeToolTip": "WebApplication1\\IService\\IRentedItemsService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Title": "UserRepository.cs",
+              "DocumentMoniker": "D:\\FiNalBackend\\Dvd_RentalBackend\\Milestone2_backend\\WebApplication1\\Repository\\UserRepository.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Repository\\UserRepository.cs",
+              "ToolTip": "D:\\FiNalBackend\\Dvd_RentalBackend\\Milestone2_backend\\WebApplication1\\Repository\\UserRepository.cs",
+              "RelativeToolTip": "WebApplication1\\Repository\\UserRepository.cs",
+              "ViewState": "AQIAALUAAAAAAAAAAAAywNMAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T16:30:06.21Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "RentedItemsService.cs",
-              "DocumentMoniker": "C:\\Users\\MSII\\Desktop\\Dvd_last\\Dvd_RentalBackend\\Milestone2_backend\\WebApplication1\\Service\\RentedItemsService.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Service\\RentedItemsService.cs",
-              "ToolTip": "C:\\Users\\MSII\\Desktop\\Dvd_last\\Dvd_RentalBackend\\Milestone2_backend\\WebApplication1\\Service\\RentedItemsService.cs",
-              "RelativeToolTip": "WebApplication1\\Service\\RentedItemsService.cs",
-              "ViewState": "AQIAACwAAAAAAAAAAAAwwEoAAAAmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T16:27:18.981Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "RentedItems.cs",
-              "DocumentMoniker": "C:\\Users\\MSII\\Desktop\\Dvd_last\\Dvd_RentalBackend\\Milestone2_backend\\WebApplication1\\Modals\\RentedItems.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Modals\\RentedItems.cs",
-              "ToolTip": "C:\\Users\\MSII\\Desktop\\Dvd_last\\Dvd_RentalBackend\\Milestone2_backend\\WebApplication1\\Modals\\RentedItems.cs",
-              "RelativeToolTip": "WebApplication1\\Modals\\RentedItems.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T16:25:44.819Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-17T17:26:31.187Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "IRentedItemsRepository.cs",
-              "DocumentMoniker": "C:\\Users\\MSII\\Desktop\\Dvd_last\\Dvd_RentalBackend\\Milestone2_backend\\WebApplication1\\IRepositroy\\IRentedItemsRepository.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\IRepositroy\\IRentedItemsRepository.cs",
-              "ToolTip": "C:\\Users\\MSII\\Desktop\\Dvd_last\\Dvd_RentalBackend\\Milestone2_backend\\WebApplication1\\IRepositroy\\IRentedItemsRepository.cs",
-              "RelativeToolTip": "WebApplication1\\IRepositroy\\IRentedItemsRepository.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Title": "LoginRepository.cs",
+              "DocumentMoniker": "D:\\FiNalBackend\\Dvd_RentalBackend\\Milestone2_backend\\WebApplication1\\Repository\\LoginRepository.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Repository\\LoginRepository.cs",
+              "ToolTip": "D:\\FiNalBackend\\Dvd_RentalBackend\\Milestone2_backend\\WebApplication1\\Repository\\LoginRepository.cs",
+              "RelativeToolTip": "WebApplication1\\Repository\\LoginRepository.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAA+wFoAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T16:25:15.384Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-17T17:25:59.031Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "RentedItemsRepository.cs",
-              "DocumentMoniker": "C:\\Users\\MSII\\Desktop\\Dvd_last\\Dvd_RentalBackend\\Milestone2_backend\\WebApplication1\\Repository\\RentedItemsRepository.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Repository\\RentedItemsRepository.cs",
-              "ToolTip": "C:\\Users\\MSII\\Desktop\\Dvd_last\\Dvd_RentalBackend\\Milestone2_backend\\WebApplication1\\Repository\\RentedItemsRepository.cs",
-              "RelativeToolTip": "WebApplication1\\Repository\\RentedItemsRepository.cs",
-              "ViewState": "AQIAAFkAAAAAAAAAAAAmwHoAAAABAAAA",
+              "DocumentIndex": 6,
+              "Title": "IUserService.cs",
+              "DocumentMoniker": "D:\\FiNalBackend\\Dvd_RentalBackend\\Milestone2_backend\\WebApplication1\\IService\\IUserService.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\IService\\IUserService.cs",
+              "ToolTip": "D:\\FiNalBackend\\Dvd_RentalBackend\\Milestone2_backend\\WebApplication1\\IService\\IUserService.cs",
+              "RelativeToolTip": "WebApplication1\\IService\\IUserService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAtAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T16:18:31.885Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-17T17:25:18.346Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "ILoginService.cs",
+              "DocumentMoniker": "D:\\FiNalBackend\\Dvd_RentalBackend\\Milestone2_backend\\WebApplication1\\IService\\ILoginService.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\IService\\ILoginService.cs",
+              "ToolTip": "D:\\FiNalBackend\\Dvd_RentalBackend\\Milestone2_backend\\WebApplication1\\IService\\ILoginService.cs",
+              "RelativeToolTip": "WebApplication1\\IService\\ILoginService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T17:25:04.024Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IUserRepository.cs",
+              "DocumentMoniker": "D:\\FiNalBackend\\Dvd_RentalBackend\\Milestone2_backend\\WebApplication1\\IRepositroy\\IUserRepository.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\IRepositroy\\IUserRepository.cs",
+              "ToolTip": "D:\\FiNalBackend\\Dvd_RentalBackend\\Milestone2_backend\\WebApplication1\\IRepositroy\\IUserRepository.cs",
+              "RelativeToolTip": "WebApplication1\\IRepositroy\\IUserRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAwAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T17:24:42.566Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 9,
+              "Title": "ILoginRepository.cs",
+              "DocumentMoniker": "D:\\FiNalBackend\\Dvd_RentalBackend\\Milestone2_backend\\WebApplication1\\IRepositroy\\ILoginRepository.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\IRepositroy\\ILoginRepository.cs",
+              "ToolTip": "D:\\FiNalBackend\\Dvd_RentalBackend\\Milestone2_backend\\WebApplication1\\IRepositroy\\ILoginRepository.cs",
+              "RelativeToolTip": "WebApplication1\\IRepositroy\\ILoginRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T17:23:39.994Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "UsersController.cs",
+              "DocumentMoniker": "D:\\FiNalBackend\\Dvd_RentalBackend\\Milestone2_backend\\WebApplication1\\Controller\\UsersController.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controller\\UsersController.cs",
+              "ToolTip": "D:\\FiNalBackend\\Dvd_RentalBackend\\Milestone2_backend\\WebApplication1\\Controller\\UsersController.cs",
+              "RelativeToolTip": "WebApplication1\\Controller\\UsersController.cs",
+              "ViewState": "AQIAAEQAAAAAAAAAAAAywFkAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T17:21:50.126Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Login.cs",
+              "DocumentMoniker": "D:\\FiNalBackend\\Dvd_RentalBackend\\Milestone2_backend\\WebApplication1\\Controller\\Login.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controller\\Login.cs",
+              "ToolTip": "D:\\FiNalBackend\\Dvd_RentalBackend\\Milestone2_backend\\WebApplication1\\Controller\\Login.cs",
+              "RelativeToolTip": "WebApplication1\\Controller\\Login.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAADQAAAA3AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T17:20:24.614Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DatabaseInitialize.cs",
+              "DocumentMoniker": "D:\\FiNalBackend\\Dvd_RentalBackend\\Milestone2_backend\\WebApplication1\\Database\\DatabaseInitialize.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Database\\DatabaseInitialize.cs",
+              "ToolTip": "D:\\FiNalBackend\\Dvd_RentalBackend\\Milestone2_backend\\WebApplication1\\Database\\DatabaseInitialize.cs",
+              "RelativeToolTip": "WebApplication1\\Database\\DatabaseInitialize.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAA+wBIAAAAQAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T09:06:59.262Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\MSII\\Desktop\\Dvd_last\\Dvd_RentalBackend\\Milestone2_backend\\WebApplication1\\appsettings.json",
+              "DocumentMoniker": "D:\\FiNalBackend\\Dvd_RentalBackend\\Milestone2_backend\\WebApplication1\\appsettings.json",
               "RelativeDocumentMoniker": "WebApplication1\\appsettings.json",
-              "ToolTip": "C:\\Users\\MSII\\Desktop\\Dvd_last\\Dvd_RentalBackend\\Milestone2_backend\\WebApplication1\\appsettings.json",
+              "ToolTip": "D:\\FiNalBackend\\Dvd_RentalBackend\\Milestone2_backend\\WebApplication1\\appsettings.json",
               "RelativeToolTip": "WebApplication1\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAfAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2024-10-17T09:08:07.162Z",
               "EditorCaption": ""
@@ -190,15 +241,122 @@
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "DatabaseInitialize.cs",
-              "DocumentMoniker": "C:\\Users\\MSII\\Desktop\\Dvd_last\\Dvd_RentalBackend\\Milestone2_backend\\WebApplication1\\Database\\DatabaseInitialize.cs",
-              "RelativeDocumentMoniker": "WebApplication1\\Database\\DatabaseInitialize.cs",
-              "ToolTip": "C:\\Users\\MSII\\Desktop\\Dvd_last\\Dvd_RentalBackend\\Milestone2_backend\\WebApplication1\\Database\\DatabaseInitialize.cs",
-              "RelativeToolTip": "WebApplication1\\Database\\DatabaseInitialize.cs",
-              "ViewState": "AQIAAFEAAAAAAAAAAAAowIYAAAAAAAAA",
+              "Title": "UserService.cs",
+              "DocumentMoniker": "D:\\FiNalBackend\\Dvd_RentalBackend\\Milestone2_backend\\WebApplication1\\Service\\UserService.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Service\\UserService.cs",
+              "ToolTip": "D:\\FiNalBackend\\Dvd_RentalBackend\\Milestone2_backend\\WebApplication1\\Service\\UserService.cs",
+              "RelativeToolTip": "WebApplication1\\Service\\UserService.cs",
+              "ViewState": "AQIAAE4AAAAAAAAAAAAywGwAAAAFAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-17T09:06:59.262Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-17T17:27:21.249Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "LoginService.cs",
+              "DocumentMoniker": "D:\\FiNalBackend\\Dvd_RentalBackend\\Milestone2_backend\\WebApplication1\\Service\\LoginService.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Service\\LoginService.cs",
+              "ToolTip": "D:\\FiNalBackend\\Dvd_RentalBackend\\Milestone2_backend\\WebApplication1\\Service\\LoginService.cs",
+              "RelativeToolTip": "WebApplication1\\Service\\LoginService.cs",
+              "ViewState": "AQIAADEAAAAAAAAAAAAywE8AAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T17:27:01.05Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "RentedItemsRequest.cs",
+              "DocumentMoniker": "D:\\FiNalBackend\\Dvd_RentalBackend\\Milestone2_backend\\WebApplication1\\DTO\\Request\\RentedItemsRequest.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\DTO\\Request\\RentedItemsRequest.cs",
+              "ToolTip": "D:\\FiNalBackend\\Dvd_RentalBackend\\Milestone2_backend\\WebApplication1\\DTO\\Request\\RentedItemsRequest.cs",
+              "RelativeToolTip": "WebApplication1\\DTO\\Request\\RentedItemsRequest.cs",
+              "ViewState": "AQIAAAQAAAAAAAAAAAA1wAwAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T16:33:41.707Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "RentedItemsController.cs",
+              "DocumentMoniker": "D:\\FiNalBackend\\Dvd_RentalBackend\\Milestone2_backend\\WebApplication1\\Controller\\RentedItemsController.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Controller\\RentedItemsController.cs",
+              "ToolTip": "D:\\FiNalBackend\\Dvd_RentalBackend\\Milestone2_backend\\WebApplication1\\Controller\\RentedItemsController.cs",
+              "RelativeToolTip": "WebApplication1\\Controller\\RentedItemsController.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAkwBsAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T16:31:28.41Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "IRentedItemsService.cs",
+              "DocumentMoniker": "D:\\FiNalBackend\\Dvd_RentalBackend\\Milestone2_backend\\WebApplication1\\IService\\IRentedItemsService.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\IService\\IRentedItemsService.cs",
+              "ToolTip": "D:\\FiNalBackend\\Dvd_RentalBackend\\Milestone2_backend\\WebApplication1\\IService\\IRentedItemsService.cs",
+              "RelativeToolTip": "WebApplication1\\IService\\IRentedItemsService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T16:30:06.21Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "RentedItemsService.cs",
+              "DocumentMoniker": "D:\\FiNalBackend\\Dvd_RentalBackend\\Milestone2_backend\\WebApplication1\\Service\\RentedItemsService.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Service\\RentedItemsService.cs",
+              "ToolTip": "D:\\FiNalBackend\\Dvd_RentalBackend\\Milestone2_backend\\WebApplication1\\Service\\RentedItemsService.cs",
+              "RelativeToolTip": "WebApplication1\\Service\\RentedItemsService.cs",
+              "ViewState": "AQIAACwAAAAAAAAAAAAwwEoAAAAmAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T16:27:18.981Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "RentedItems.cs",
+              "DocumentMoniker": "D:\\FiNalBackend\\Dvd_RentalBackend\\Milestone2_backend\\WebApplication1\\Modals\\RentedItems.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Modals\\RentedItems.cs",
+              "ToolTip": "D:\\FiNalBackend\\Dvd_RentalBackend\\Milestone2_backend\\WebApplication1\\Modals\\RentedItems.cs",
+              "RelativeToolTip": "WebApplication1\\Modals\\RentedItems.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T16:25:44.819Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "IRentedItemsRepository.cs",
+              "DocumentMoniker": "D:\\FiNalBackend\\Dvd_RentalBackend\\Milestone2_backend\\WebApplication1\\IRepositroy\\IRentedItemsRepository.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\IRepositroy\\IRentedItemsRepository.cs",
+              "ToolTip": "D:\\FiNalBackend\\Dvd_RentalBackend\\Milestone2_backend\\WebApplication1\\IRepositroy\\IRentedItemsRepository.cs",
+              "RelativeToolTip": "WebApplication1\\IRepositroy\\IRentedItemsRepository.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T16:25:15.384Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "RentedItemsResponse.cs",
+              "DocumentMoniker": "D:\\FiNalBackend\\Dvd_RentalBackend\\Milestone2_backend\\WebApplication1\\DTO\\Response\\RentedItemsResponse.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\DTO\\Response\\RentedItemsResponse.cs",
+              "ToolTip": "D:\\FiNalBackend\\Dvd_RentalBackend\\Milestone2_backend\\WebApplication1\\DTO\\Response\\RentedItemsResponse.cs",
+              "RelativeToolTip": "WebApplication1\\DTO\\Response\\RentedItemsResponse.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T16:34:01.677Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "RentedItemsRepository.cs",
+              "DocumentMoniker": "D:\\FiNalBackend\\Dvd_RentalBackend\\Milestone2_backend\\WebApplication1\\Repository\\RentedItemsRepository.cs",
+              "RelativeDocumentMoniker": "WebApplication1\\Repository\\RentedItemsRepository.cs",
+              "ToolTip": "D:\\FiNalBackend\\Dvd_RentalBackend\\Milestone2_backend\\WebApplication1\\Repository\\RentedItemsRepository.cs",
+              "RelativeToolTip": "WebApplication1\\Repository\\RentedItemsRepository.cs",
+              "ViewState": "AQIAAFkAAAAAAAAAAAAmwHoAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-17T16:18:31.885Z"
             }
           ]
         }
