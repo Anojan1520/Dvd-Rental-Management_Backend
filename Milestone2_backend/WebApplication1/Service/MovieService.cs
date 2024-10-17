@@ -1,4 +1,5 @@
-﻿using WebApplication1.DTO.Request;
+﻿using Microsoft.AspNetCore.Mvc;
+using WebApplication1.DTO.Request;
 using WebApplication1.DTO.Response;
 using WebApplication1.IRepositroy;
 using WebApplication1.IService;
@@ -17,13 +18,21 @@ namespace WebApplication1.Service
             _image = image;
         }
 
-        public async Task<string> AddMovie(MovieRequest movie)
+        public async Task<string> AddMovie([FromForm]MovieRequest movie)
         {
             if (movie.Images.Count == 0)
             {
                 throw new ArgumentNullException("Movie Image is required");
             }
             string imagepaths = await _image.SaveImage(movie.Images, movie.Name);
+            if (movie.Price<1)
+            {
+                throw new Exception("Enter a positive movie price");
+            }
+            if (movie.Quantity < 0)
+            {
+                throw new Exception("Enter a positive value for movie quantity");
+            }
 
             var obj = new Movies
             {
@@ -72,7 +81,6 @@ namespace WebApplication1.Service
         public async Task<MovieResponse> GetMovieById(Guid id)
         {
             var data = await _MovieRepo.GetMovieById(id);
-           // var imgs = data.Images.Split(",");
             var imglist = new List<string>();
             foreach (var im in data.Images.Split(",")) 
             {
@@ -92,10 +100,17 @@ namespace WebApplication1.Service
             };
         }
 
-        public async Task<string> updateMovie(MovieRequest movie, Guid id)
+        public async Task<string> updateMovie([FromForm] MovieRequest movie, Guid id)
         {
-            await deleteimage(id);//to delete old images 
-            string imagepaths = await _image.SaveImage(movie.Images, movie.Name);// to save new images
+            if (movie.Price < 1)
+            {
+                throw new Exception("Enter a positive movie price");
+            }
+            if (movie.Quantity < 0)
+            {
+                throw new Exception("Enter a positive value for movie quantity");
+            }
+            var olddata = await _MovieRepo.GetMovieById(id);
             var movieobj = new Movies
             {
                 id = id,
@@ -103,7 +118,7 @@ namespace WebApplication1.Service
                 Genere = movie.Genere,
                 Director = movie.Director,
                 Actor = movie.Actor,
-                Images = imagepaths,
+                Images = olddata.Images,
                 Quantity = movie.Quantity,
                 Price = movie.Price,
                 Release = movie.Release,
@@ -114,20 +129,16 @@ namespace WebApplication1.Service
 
         public async Task<string> deleteMovie(Guid id)
         {
-           await deleteimage(id);
-            var response = await _MovieRepo.deleteMovie(id);
-            return response;
-        }
-
-        public async Task deleteimage(Guid id) 
-        {
             var olddata = await _MovieRepo.GetMovieById(id);
             if (olddata == null)
             {
                 throw new Exception("Invalid id");
             }
             _image.Deleteimg(olddata.Images);
+            var response = await _MovieRepo.deleteMovie(id);
+            return response;
         }
+              
 
     }
 }

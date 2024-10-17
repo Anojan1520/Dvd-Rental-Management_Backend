@@ -52,6 +52,7 @@ namespace WebApplication1.Controller
                 return BadRequest(ex.Message);
             }
         }
+
         [HttpPut("User")]
         public async Task<IActionResult> UpdateUser(UserRequest user, Guid id)
         {

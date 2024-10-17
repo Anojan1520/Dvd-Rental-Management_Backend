@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Data.SqlClient;
 using WebApplication1.DTO.Request;
 using WebApplication1.IService;
 
@@ -17,8 +18,8 @@ namespace WebApplication1.Controller
         }
 
 
-        [HttpPost("Add_Movie")]
-        public async Task<IActionResult> AddMovie(MovieRequest movie)
+        [HttpPost("Movie")]
+        public async Task<IActionResult> AddMovie([FromForm]MovieRequest movie)
         {
             try
             {
@@ -30,9 +31,13 @@ namespace WebApplication1.Controller
                 var data = await _movieService.AddMovie(movie);
                 return Ok(data);
             }
-            catch (ArgumentNullException ex)
+            catch(SqlException ex)
             {
                 return BadRequest(ex.Message);
+            }
+            catch (ArgumentNullException ex)
+            {
+                return NotFound(ex.Message);
             }
             catch (ArgumentException ex)
             {
@@ -45,7 +50,7 @@ namespace WebApplication1.Controller
         }
 
 
-        [HttpGet("get_All-Movies")]
+        [HttpGet("Movie")]
         public async Task<IActionResult> GetAllMovies()
         {
             try
@@ -53,6 +58,10 @@ namespace WebApplication1.Controller
                 var data = await _movieService.GetAllMovies();
                 return Ok(data);
             }
+            catch (SqlException ex)
+            {
+                return BadRequest(ex.Message);
+            }
             catch (ArgumentNullException ex)
             {
                 return NotFound(ex.Message);
@@ -64,7 +73,7 @@ namespace WebApplication1.Controller
         }
 
 
-        [HttpGet("get-Movie-byId")]
+        [HttpGet("Movie/{id}")]
         public async Task<IActionResult> GetMovieById(Guid id)
         {
             try
@@ -72,6 +81,10 @@ namespace WebApplication1.Controller
                 var data = await _movieService.GetMovieById(id);
                 return Ok(data);
             }
+            catch (SqlException ex)
+            {
+                return BadRequest(ex.Message);
+            }
             catch (ArgumentNullException ex)
             {
                 return NotFound(ex.Message);
@@ -83,21 +96,21 @@ namespace WebApplication1.Controller
         }
 
 
-        [HttpPut("update-movie")]
-        public async Task<IActionResult> updateMovie(MovieRequest movie, Guid id)
+        [HttpPut("Movie/{id}")]
+        public async Task<IActionResult> updateMovie([FromForm] MovieRequest movie, Guid id)
         {
             try
             {
-                if (movie==null)
-                {
-                   return BadRequest("movie details are required");
-                }
                 var data = await _movieService.updateMovie(movie, id);
                 return Ok(data);
             }
-            catch (ArgumentNullException ex)
+            catch (SqlException ex)
             {
                 return BadRequest(ex.Message);
+            }
+            catch (ArgumentNullException ex)
+            {
+                return NotFound(ex.Message);
             }
             catch (ArgumentException ex)
             {
@@ -114,13 +127,17 @@ namespace WebApplication1.Controller
         }
 
 
-        [HttpDelete("delete-movie")]
+        [HttpDelete("Movie/{id}")]
         public async Task<IActionResult> deleteMovie(Guid id)
         {
             try
             {
                 var data = await _movieService.deleteMovie(id);
                 return Ok(data);
+            }
+            catch (SqlException ex)
+            {
+                return BadRequest(ex.Message);
             }
             catch (ArgumentNullException ex)
             {
