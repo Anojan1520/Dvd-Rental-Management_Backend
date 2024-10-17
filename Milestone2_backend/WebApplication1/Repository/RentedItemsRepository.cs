@@ -58,7 +58,7 @@ namespace WebApplication1.Repository
                             MovieId = item.GetGuid(1),
                             UserId = item.GetGuid(2),
                             Status = item.GetString(3),
-                            RentQuantity = item.GetString(4),
+                            RentQuantity = item.GetInt32(4),
                             RentedDate = item.GetString(5),
                             ReturnDate = item.GetString(6),
                            
@@ -69,6 +69,36 @@ namespace WebApplication1.Repository
                     return RentedItem;
                 } 
             }
+        }
+
+        public async Task<string> UpdateRentedItems(RentedItems rentedItems)
+        {
+            using (var Connection = new SqlConnection(_connectionString))
+            {
+                await Connection.OpenAsync();
+
+                var command = Connection.CreateCommand();
+                command.CommandText = @"
+                        UPDATE RentedItems
+                        SET MovieId=@MovieId , 
+                           UserId=@UserId ,
+                           Status=@Status, 
+                           RentedQuantity=@RentedQuantity,
+                           RentDate=@RentDate,
+                           ReturnDate=@ReturnDate
+                        WHERE id=@id
+                                    ";
+                command.Parameters.AddWithValue("@id", rentedItems.Id);
+                command.Parameters.AddWithValue("@MovieId", rentedItems.MovieId);
+                command.Parameters.AddWithValue("@UserId", rentedItems.UserId);
+                command.Parameters.AddWithValue("@Status", rentedItems.Status);
+                command.Parameters.AddWithValue("@RentedQuantity", rentedItems.RentQuantity);
+                command.Parameters.AddWithValue("@RentDate", rentedItems.RentedDate);
+                command.Parameters.AddWithValue("@ReturnDate", rentedItems.ReturnDate);
+
+                await command.ExecuteNonQueryAsync();
+            }
+            return "Update Succesfully";
         }
 
 

@@ -17,7 +17,7 @@ namespace WebApplication1.Controller
             _itemsService = itemsService;
         }
 
-        [HttpPost("Rented_Item")]
+        [HttpPost("RentedItem")]
         public IActionResult AddRentedItems(RentedItemsRequest item)
         {
             try
@@ -31,7 +31,7 @@ namespace WebApplication1.Controller
             }
         }
 
-        [HttpGet("Get_All_Item")]
+        [HttpGet("GetAllRentedItem")]
         public IActionResult GetRentedItems()
         {
             try
@@ -45,12 +45,26 @@ namespace WebApplication1.Controller
             }
         }
 
-        [HttpDelete("Delete_Rented_Item")]
+        [HttpPut("RentedItem")]
+        public async Task<IActionResult> UpdateRentedItems(Guid id, RentedItemsRequest item)
+        {
+            try
+            {
+                var Returndata = await _itemsService.UpdateRentedItem(id, item);
+                return Ok(Returndata);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
+        [HttpDelete("DeleteRentedItem")]
         public IActionResult DeleteRentedItems(Guid Id)
         {
             try
             {
-                var Returndata = _itemsService.GetRentedItems(Id);
+                var Returndata = _itemsService.DeleteRentedItem(Id);
                 return Ok(Returndata);
             }
             catch (Exception ex)

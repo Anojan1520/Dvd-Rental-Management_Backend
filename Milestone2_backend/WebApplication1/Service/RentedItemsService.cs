@@ -55,8 +55,24 @@ namespace WebApplication1.Service
             return listrespons;
         }
 
+        public async Task<string> UpdateRentedItem(Guid id, RentedItemsRequest item)
+        {
+            var obj = new RentedItems
+            {
+                Id = id,
+                MovieId = item.MovieId,
+                UserId = item.UserId,
+                Status = item.Status,
+                RentQuantity = item.RentQuantity,
+                RentedDate = item.RentedDate,
+                ReturnDate = item.ReturnDate,
+            };
+            var Itemdata = await _rentedItemsRepository.UpdateRentedItems(obj);
+            return Itemdata;
+        }
 
-        public string GetRentedItems(Guid id)
+
+        public string DeleteRentedItem(Guid id)
         {
             var data = _rentedItemsRepository.DeleteRentedItem(id);
             return data;
