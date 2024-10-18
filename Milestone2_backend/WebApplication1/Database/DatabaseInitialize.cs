@@ -77,6 +77,11 @@ namespace WebApplication1.Database
                                       RentedQuantity INT   NOT NULL,
                                       RentDate NVARCHAR(30)  NOT NULL,
                                       ReturnDate NVARCHAR(30)   NOT NULL,
+
+                              CONSTRAINT FK_RentedItems_Movies FOREIGN KEY (MovieId) REFERENCES  Movies(id),
+                              CONSTRAINT FK_RentedItems_Users FOREIGN KEY (UserId) REFERENCES  Users(id)
+
+                            
                          );
                     END
                 ";
@@ -94,6 +99,9 @@ namespace WebApplication1.Database
                                 UserId UNIQUEIDENTIFIER  NOT NULL,
                                 RequestDate NVARCHAR(20)  NOT NULL,
                                 Status NVARCHAR(20)   NOT NULL,
+
+                         CONSTRAINT  FK_Notification_Movies FOREIGN KEY (MovieId) REFERENCES  Movies(id),
+                         CONSTRAINT  FK_Notification_Users FOREIGN KEY (UserId) REFERENCES  Users(id)
                              ); 
                           END
                 "; 
