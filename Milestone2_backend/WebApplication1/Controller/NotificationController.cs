@@ -22,7 +22,7 @@ namespace WebApplication1.Controller
         {
             try
             {
-                var ReturnData = await _notificationService.AddNotification(notification);
+                var ReturnData =await _notificationService.AddNotification(notification);
                 return Ok(ReturnData);
             }
             catch (SqlException ex)
@@ -33,11 +33,11 @@ namespace WebApplication1.Controller
             {
                 return NotFound(ex.Message);
             }
-            catch (Exception ex)
+             catch (Exception ex)
             {
                 return BadRequest(ex.Message);
             }
-
+            
         }
 
         [HttpGet("Notification")]

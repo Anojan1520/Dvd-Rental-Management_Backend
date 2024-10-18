@@ -12,6 +12,5 @@ namespace WebApplication1.Modals
         public string RequestDate { get; set; }
         public string Status { get; set; }
 
-
     }
 }

@@ -16,7 +16,7 @@ namespace WebApplication1.Repository
 
         public async Task<string> UserLogin(Login detail)
         {
-            using (var connection = new SqlConnection(connectionString))
+            using (var connection =  new SqlConnection(connectionString))
             {
                 await connection.OpenAsync();
                 var command = connection.CreateCommand();
@@ -24,7 +24,7 @@ namespace WebApplication1.Repository
                         INSERT INTO LoginUsers(id,username,password)
                         VALUES (@id,@username,@password);
                 ";
-                command.Parameters.AddWithValue("@id", detail.id);
+                command.Parameters.AddWithValue("@id",detail.id);
                 command.Parameters.AddWithValue("@username", detail.Username);
                 command.Parameters.AddWithValue("@password", detail.password);
                 command.ExecuteNonQuery();
@@ -87,6 +87,6 @@ namespace WebApplication1.Repository
             }
             return LoginList;
         }
-
+        
     }
 }

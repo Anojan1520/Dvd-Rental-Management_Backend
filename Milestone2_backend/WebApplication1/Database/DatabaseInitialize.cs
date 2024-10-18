@@ -62,10 +62,8 @@ namespace WebApplication1.Database
                                               id UNIQUEIDENTIFIER PRIMARY KEY ,
                                               username NVARCHAR(20)  NOT NULL ,
                                               password NVARCHAR(150)  NOT NULL, 
-                                              CONSTRAINT FK_LoginUsers_Users FOREIGN KEY (username) REFERENCES Users(username)
-                );
-                               END
-                ";
+                                              CONSTRAINT FK_LoginUsers_Users FOREIGN KEY (username) REFERENCES Users(username) );
+                               END";
                 Command.ExecuteNonQuery();
 
                 Command.CommandText = @"
@@ -79,15 +77,11 @@ namespace WebApplication1.Database
                                       RentedQuantity INT   NOT NULL,
                                       RentDate NVARCHAR(30)  NOT NULL,
                                       ReturnDate NVARCHAR(30)   NOT NULL,
-
-                              CONSTRAINT FK_RentedItems_Movies FOREIGN KEY (MovieId) REFERENCES  Movies(id),
-                              CONSTRAINT FK_RentedItems_Users FOREIGN KEY (UserId) REFERENCES  Users(id)
                          );
                     END
                 ";
                 Command.ExecuteNonQuery();
-
-             
+                              
 
                 Command.CommandText = @"
                    IF NOT EXISTS (SELECT * FROM sys.tables where name = 'Notification')
@@ -100,8 +94,6 @@ namespace WebApplication1.Database
                                 UserId UNIQUEIDENTIFIER  NOT NULL,
                                 RequestDate NVARCHAR(20)  NOT NULL,
                                 Status NVARCHAR(20)   NOT NULL,
-                         CONSTRAINT  FK_Notification_Movies FOREIGN KEY (MovieId) REFERENCES  Movies(id),
-                         CONSTRAINT  FK_Notification_Users FOREIGN KEY (UserId) REFERENCES  Users(id)
                              ); 
                           END
                 "; 

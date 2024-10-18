@@ -11,9 +11,5 @@
         public int phone { get; set; }
         public string email { get; set; }
 
-
-
-
-
     }
 }

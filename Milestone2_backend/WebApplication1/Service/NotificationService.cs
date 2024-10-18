@@ -1,4 +1,5 @@
-﻿using WebApplication1.DTO.Request;
+﻿using System.Data.SqlClient;
+using WebApplication1.DTO.Request;
 using WebApplication1.DTO.Response;
 using WebApplication1.IRepository;
 using WebApplication1.IService;
@@ -16,13 +17,13 @@ namespace WebApplication1.Service
             _notificationRepository = notificationRepository;
         }
 
-        public async Task<string> AddNotification(NotificationRequest notification)
+        public  async Task<string> AddNotification(NotificationRequest notification)
         {
-            if (notification.RentedQuantity < 1)
+            if (notification.RentedQuantity<1)
             {
                 throw new ArgumentException("Rented quantity must be positive");
             }
-
+           
             var obj = new Notifications
             {
                 RentedId = notification.RentedId,
@@ -62,7 +63,7 @@ namespace WebApplication1.Service
 
         public async Task<string> DeleteNotification(Guid notificationId)
         {
-            var data = await _notificationRepository.DeleteNotification(notificationId);
+            var data =await _notificationRepository.DeleteNotification(notificationId);
             return data;
         }
 
@@ -83,10 +84,10 @@ namespace WebApplication1.Service
                 Status = notificationRequest.Status
             };
 
-            var data = await _notificationRepository.UpdateNotification(requestdata);
+            var data =await _notificationRepository.UpdateNotification(requestdata);
             return data;
         }
-
+        
     }
 }
 

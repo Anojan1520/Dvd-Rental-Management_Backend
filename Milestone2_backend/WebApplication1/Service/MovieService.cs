@@ -1,5 +1,4 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using WebApplication1.DTO.Request;
+﻿using WebApplication1.DTO.Request;
 using WebApplication1.DTO.Response;
 using WebApplication1.IRepositroy;
 using WebApplication1.IService;
@@ -24,8 +23,7 @@ namespace WebApplication1.Service
             {
                 throw new ArgumentNullException("Movie Image is required");
             }
-            string imagepaths = await _image.SaveImage(movie.Images, movie.Name);
-            if (movie.Price<1)
+            if (movie.Price < 1)
             {
                 throw new Exception("Enter a positive movie price");
             }
@@ -33,6 +31,8 @@ namespace WebApplication1.Service
             {
                 throw new Exception("Enter a positive value for movie quantity");
             }
+
+            string imagepaths = await _image.SaveImage(movie.Images, movie.Name);
 
             var obj = new Movies
             {
@@ -74,7 +74,6 @@ namespace WebApplication1.Service
                     Release = movie.Release,
                 });
             }
-           
             return movielist;
         }
 
@@ -82,7 +81,7 @@ namespace WebApplication1.Service
         {
             var data = await _MovieRepo.GetMovieById(id);
             var imglist = new List<string>();
-            foreach (var im in data.Images.Split(",")) 
+            foreach (var im in data.Images.Split(","))
             {
                 imglist.Add(im);
             }
@@ -100,7 +99,7 @@ namespace WebApplication1.Service
             };
         }
 
-        public async Task<string> updateMovie( MovieRequest movie, Guid id)
+        public async Task<string> updateMovie(MovieRequest movie, Guid id)
         {
             if (movie.Price < 1)
             {
@@ -138,7 +137,7 @@ namespace WebApplication1.Service
             var response = await _MovieRepo.deleteMovie(id);
             return response;
         }
-              
+
 
     }
 }

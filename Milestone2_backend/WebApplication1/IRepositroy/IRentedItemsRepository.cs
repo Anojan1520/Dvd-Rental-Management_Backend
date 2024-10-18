@@ -6,8 +6,7 @@ namespace WebApplication1.IRepository
     {
         string AddRentedItems(RentedItems rentedItems);
         List<RentedItems> GetAllRentedItems();
-        Task<string> UpdateRentedItems(RentedItems rentedItems);
         string DeleteRentedItem(Guid id);
-
+        Task<string> UpdateRentedItems(RentedItems rentedItems);
     }
 }

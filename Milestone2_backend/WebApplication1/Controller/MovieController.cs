@@ -19,7 +19,7 @@ namespace WebApplication1.Controller
 
 
         [HttpPost("Movie")]
-        public async Task<IActionResult> AddMovie([FromForm]MovieRequest movie)
+        public async Task<IActionResult> AddMovie([FromForm] MovieRequest movie)
         {
             try
             {
@@ -31,7 +31,7 @@ namespace WebApplication1.Controller
                 var data = await _movieService.AddMovie(movie);
                 return Ok(data);
             }
-            catch(SqlException ex)
+            catch (SqlException ex)
             {
                 return BadRequest(ex.Message);
             }
@@ -101,6 +101,10 @@ namespace WebApplication1.Controller
         {
             try
             {
+                if (movie==null)
+                {
+                   return BadRequest("movie details are required");
+                }
                 var data = await _movieService.updateMovie(movie, id);
                 return Ok(data);
             }
@@ -141,7 +145,7 @@ namespace WebApplication1.Controller
             }
             catch (ArgumentNullException ex)
             {
-                return BadRequest(ex.Message);
+                return NotFound(ex.Message);
             }
             catch (ArgumentException ex)
             {
@@ -149,7 +153,7 @@ namespace WebApplication1.Controller
             }
             catch (FileNotFoundException ex)
             {
-                return BadRequest(ex.Message);
+                return NotFound(ex.Message);
             }
             catch (Exception ex)
             {

@@ -24,14 +24,28 @@ namespace WebApplication1.Service
                 MovieId = item.MovieId,
                 UserId = item.UserId,
                 Status = item.Status,
-                RentedQuantity = item.RentedQuantity,
+                RentQuantity = item.RentQuantity,
                 RentedDate = item.RentedDate,
                 ReturnDate = item.ReturnDate,
             };
             var Itemdata = _rentedItemsRepository.AddRentedItems(obj);
             return Itemdata;
         }
-
+        public async Task<string> UpdateRentedItem(Guid id , RentedItemsRequest item)
+        {
+            var obj = new RentedItems
+            {
+                Id = id,
+                MovieId = item.MovieId,
+                UserId = item.UserId,
+                Status = item.Status,
+                RentQuantity = item.RentQuantity,
+                RentedDate = item.RentedDate,
+                ReturnDate = item.ReturnDate,
+            };
+            var Itemdata =await _rentedItemsRepository.UpdateRentedItems(obj);
+            return Itemdata;
+        }
 
         public List<RentedItemsResponse> GetAllRentedItems()
         {
@@ -41,10 +55,11 @@ namespace WebApplication1.Service
             {
                 var response = new RentedItemsResponse()
                 {
+                    Id=item.Id,
                     MovieId = item.MovieId,
                     UserId = item.UserId,
                     Status = item.Status,
-                    RentedQuantity = item.RentedQuantity,
+                    RentQuantity = item.RentQuantity,
                     RentedDate = item.RentedDate,
                     ReturnDate = item.ReturnDate,
 
@@ -55,24 +70,8 @@ namespace WebApplication1.Service
             return listrespons;
         }
 
-        public async Task<string> UpdateRentedItem(Guid id, RentedItemsRequest item)
-        {
-            var obj = new RentedItems
-            {
-                Id = id,
-                MovieId = item.MovieId,
-                UserId = item.UserId,
-                Status = item.Status,
-                RentedQuantity = item.RentedQuantity,
-                RentedDate = item.RentedDate,
-                ReturnDate = item.ReturnDate,
-            };
-            var Itemdata = await _rentedItemsRepository.UpdateRentedItems(obj);
-            return Itemdata;
-        }
 
-
-        public string DeleteRentedItem(Guid id)
+        public string GetRentedItems(Guid id)
         {
             var data = _rentedItemsRepository.DeleteRentedItem(id);
             return data;

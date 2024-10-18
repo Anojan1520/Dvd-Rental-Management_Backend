@@ -22,12 +22,11 @@ namespace WebApplication1.Controller
             {
                 var data = await _LoginService.LoginCustomer(LoginDetails);
                 return Ok(data);
-            }
-            catch (Exception ex)
+            }catch (Exception ex)
             {
-                return BadRequest(ex.Message);
+                  return BadRequest(ex.Message);
             }
-
+            
         }
 
         [HttpDelete("User")]

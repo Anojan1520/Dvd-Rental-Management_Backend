@@ -3,6 +3,7 @@ using WebApplication1.DTO.Response;
 using WebApplication1.IRepositroy;
 using WebApplication1.IService;
 using WebApplication1.Modals;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace WebApplication1.Service
 {
@@ -25,7 +26,7 @@ namespace WebApplication1.Service
                     position = user.position,
                     firstname = user.firstname,
                     username = user.username,
-                    password = user.password,
+                    password =user.password,
                     phone = user.phone,
                     email = user.email,
                     nic = user.nic,
@@ -105,6 +106,6 @@ namespace WebApplication1.Service
             }
         }
 
-
-    }
+        
+    } 
 }

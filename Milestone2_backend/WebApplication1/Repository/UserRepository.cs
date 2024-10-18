@@ -17,7 +17,7 @@ namespace WebApplication1.Repository
 
         public async Task<string> Register(Users user)
         {
-            var CheckUserName = await GetByUserName(user.username);
+            var CheckUserName =await GetByUserName(user.username);
             if (CheckUserName == null)
             {
                 using (var connection = new SqlConnection(connectionString))
@@ -30,12 +30,12 @@ namespace WebApplication1.Repository
                     command.Parameters.AddWithValue("@position", user.position);
                     command.Parameters.AddWithValue("@firstname", user.firstname);
                     command.Parameters.AddWithValue("@username", user.username);
-                    command.Parameters.AddWithValue("@password", EncryptPassword(user.password));
+                    command.Parameters.AddWithValue("@password",  EncryptPassword(user.password));
                     command.Parameters.AddWithValue("@nic", user.nic);
                     command.Parameters.AddWithValue("@phone", user.phone);
                     command.Parameters.AddWithValue("@email", user.email);
 
-                    await command.ExecuteNonQueryAsync();
+                  await command.ExecuteNonQueryAsync();
                 }
                 return ("Registration Successfull..");
 
@@ -79,7 +79,7 @@ namespace WebApplication1.Repository
                 }
             }
         }
-        public async Task<Users> GetByUserID(Guid userid)
+         public async Task<Users> GetByUserID(Guid userid)
         {
             using (var connection = new SqlConnection(connectionString))
             {
@@ -177,7 +177,7 @@ namespace WebApplication1.Repository
 
         public async Task<string> DeleteUser(Guid userid)
         {
-            using (var Connection = new SqlConnection(connectionString))
+            using(var Connection = new SqlConnection(connectionString))
             {
                 await Connection.OpenAsync();
                 var command = Connection.CreateCommand();
@@ -186,7 +186,7 @@ namespace WebApplication1.Repository
                          WHERE id=@id;
                 ";
                 command.Parameters.AddWithValue("@id", userid);
-                await command.ExecuteNonQueryAsync();
+             await command.ExecuteNonQueryAsync();
             };
             return "Deleted SuccesFully";
         }
@@ -203,7 +203,7 @@ namespace WebApplication1.Repository
 
             return new string(encrypted);
         }
-
+      
 
 
 

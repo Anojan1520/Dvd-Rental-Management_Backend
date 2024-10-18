@@ -7,8 +7,7 @@ namespace WebApplication1.IService
     {
          string AddRentedItems(RentedItemsRequest item);
          List<RentedItemsResponse> GetAllRentedItems();
-         Task<string> UpdateRentedItem(Guid id, RentedItemsRequest item);
-         string DeleteRentedItem(Guid id);
-
+         string GetRentedItems(Guid id);
+        Task<string> UpdateRentedItem(Guid id, RentedItemsRequest item);
     }
 }

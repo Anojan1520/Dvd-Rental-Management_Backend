@@ -40,7 +40,7 @@ namespace WebApplication1.Controller
         {
             try
             {
-                var data = await userService.GetAllUser();
+                var data =await userService.GetAllUser();
                 return Ok(data);
             }
             catch (SqlException sqlEx)
@@ -75,7 +75,7 @@ namespace WebApplication1.Controller
         {
             try
             {
-                var data = await userService.DeleteUser(id);
+                var data =await userService.DeleteUser(id);
                 return Ok(data);
             }
             catch (SqlException sqlEx)
@@ -84,7 +84,7 @@ namespace WebApplication1.Controller
             }
             catch (Exception ex)
             {
-                return BadRequest(ex.Message);
+                return BadRequest(ex.Message) ;
             }
         }
     }
