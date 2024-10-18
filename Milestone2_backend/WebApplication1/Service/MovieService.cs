@@ -18,7 +18,7 @@ namespace WebApplication1.Service
             _image = image;
         }
 
-        public async Task<string> AddMovie([FromForm]MovieRequest movie)
+        public async Task<string> AddMovie(MovieRequest movie)
         {
             if (movie.Images.Count == 0)
             {
@@ -100,7 +100,7 @@ namespace WebApplication1.Service
             };
         }
 
-        public async Task<string> updateMovie([FromForm] MovieRequest movie, Guid id)
+        public async Task<string> updateMovie( MovieRequest movie, Guid id)
         {
             if (movie.Price < 1)
             {

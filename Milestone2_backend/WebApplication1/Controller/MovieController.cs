@@ -97,7 +97,7 @@ namespace WebApplication1.Controller
 
 
         [HttpPut("Movie/{id}")]
-        public async Task<IActionResult> updateMovie([FromForm] MovieRequest movie, Guid id)
+        public async Task<IActionResult> updateMovie([FromBody] MovieRequest movie, Guid id)
         {
             try
             {
