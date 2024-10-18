@@ -77,7 +77,7 @@ namespace WebApplication1.Database
                                       UserId UNIQUEIDENTIFIER  NOT NULL,
                                       Status NVARCHAR(20)   NOT NULL,
                                       RentedQuantity INT   NOT NULL,
-                                      RentDate DATE  NOT NULL,
+                                      RentDate NVARCHAR(30)  NOT NULL,
                                       ReturnDate NVARCHAR(30)   NOT NULL,
 
                               CONSTRAINT FK_RentedItems_Movies FOREIGN KEY (MovieId) REFERENCES  Movies(id),
@@ -87,23 +87,7 @@ namespace WebApplication1.Database
                 ";
                 Command.ExecuteNonQuery();
 
-                Command.CommandText = @"
-                   IF NOT EXISTS (SELECT * FROM sys.tables where name = 'Orders')
-                         BEGIN 
-                            CREATE TABLE Orders(
-                                 id UNIQUEIDENTIFIER PRIMARY KEY  NOT NULL,
-                                 RentedId UNIQUEIDENTIFIER  NOT NULL, 
-                                 MovieId UNIQUEIDENTIFIER  NOT NULL,
-                                 UserId UNIQUEIDENTIFIER  NOT NULL,
-                                 RentedQuantity INT   NOT NULL,
-                                 RentDate DATE  NOT NULL,
-                             CONSTRAINT  FK_Orders_RentedItems FOREIGN KEY (RentedId) REFERENCES  RentedItems(id),
-                             CONSTRAINT  FK_Orders_Movies FOREIGN KEY (MovieId) REFERENCES  Movies(id),
-                             CONSTRAINT  FK_Orders_Users FOREIGN KEY (UserId) REFERENCES  Users(id)
-                             );
-                         END
-                ";
-                Command.ExecuteNonQuery();
+             
 
                 Command.CommandText = @"
                    IF NOT EXISTS (SELECT * FROM sys.tables where name = 'Notification')
@@ -114,7 +98,7 @@ namespace WebApplication1.Database
                                 RentedQuantity  INT  NOT NULL,
                                 movieId UNIQUEIDENTIFIER  NOT NULL,
                                 UserId UNIQUEIDENTIFIER  NOT NULL,
-                                RequestDate DATE  NOT NULL,
+                                RequestDate NVARCHAR(20)  NOT NULL,
                                 Status NVARCHAR(20)   NOT NULL,
                          CONSTRAINT  FK_Notification_Movies FOREIGN KEY (MovieId) REFERENCES  Movies(id),
                          CONSTRAINT  FK_Notification_Users FOREIGN KEY (UserId) REFERENCES  Users(id)

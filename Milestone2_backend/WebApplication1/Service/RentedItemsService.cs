@@ -24,7 +24,7 @@ namespace WebApplication1.Service
                 MovieId = item.MovieId,
                 UserId = item.UserId,
                 Status = item.Status,
-                RentQuantity = item.RentQuantity,
+                RentedQuantity = item.RentedQuantity,
                 RentedDate = item.RentedDate,
                 ReturnDate = item.ReturnDate,
             };
@@ -44,7 +44,7 @@ namespace WebApplication1.Service
                     MovieId = item.MovieId,
                     UserId = item.UserId,
                     Status = item.Status,
-                    RentQuantity = item.RentQuantity,
+                    RentedQuantity = item.RentedQuantity,
                     RentedDate = item.RentedDate,
                     ReturnDate = item.ReturnDate,
 
@@ -63,7 +63,7 @@ namespace WebApplication1.Service
                 MovieId = item.MovieId,
                 UserId = item.UserId,
                 Status = item.Status,
-                RentQuantity = item.RentQuantity,
+                RentedQuantity = item.RentedQuantity,
                 RentedDate = item.RentedDate,
                 ReturnDate = item.ReturnDate,
             };
