@@ -16,8 +16,13 @@ namespace WebApplication1.Service
             _notificationRepository = notificationRepository;
         }
 
-        public string AddNotification(NotificationRequest notification)
+        public async Task<string> AddNotification(NotificationRequest notification)
         {
+            if (notification.RentedQuantity < 1)
+            {
+                throw new ArgumentException("Rented quantity must be positive");
+            }
+
             var obj = new Notifications
             {
                 RentedId = notification.RentedId,
@@ -26,17 +31,16 @@ namespace WebApplication1.Service
                 UserId = notification.UserId,
                 RequestDate = notification.RequestDate,
                 Status = notification.Status
-
             };
 
-            var ReturnData = _notificationRepository.AddNotification(obj);
+            var ReturnData = await _notificationRepository.AddNotification(obj);
             return ReturnData;
 
         }
 
-        public List<NotificationResponse> GetNotifications()
+        public async Task<List<NotificationResponse>> GetNotifications()
         {
-            var data = _notificationRepository.GetNotifications();
+            var data = await _notificationRepository.GetNotifications();
             var listresponse = new List<NotificationResponse>();
             foreach (var item in data)
             {
@@ -52,22 +56,22 @@ namespace WebApplication1.Service
 
                 };
                 listresponse.Add(response);
-
-
             };
             return listresponse;
-
         }
 
-
-        public string DeleteNotification(Guid notificationId)
+        public async Task<string> DeleteNotification(Guid notificationId)
         {
-            var data = _notificationRepository.DeleteNotification(notificationId);
+            var data = await _notificationRepository.DeleteNotification(notificationId);
             return data;
         }
 
-        public string UpdateNotification(NotificationRequest notificationRequest, Guid notificationId)
+        public async Task<string> UpdateNotification(NotificationRequest notificationRequest, Guid notificationId)
         {
+            if (notificationRequest.RentedQuantity < 1)
+            {
+                throw new ArgumentException("Rented quantity must be positive");
+            }
             var requestdata = new Notifications
             {
                 id = notificationId,
@@ -79,7 +83,7 @@ namespace WebApplication1.Service
                 Status = notificationRequest.Status
             };
 
-            var data = _notificationRepository.UpdateNotification(requestdata);
+            var data = await _notificationRepository.UpdateNotification(requestdata);
             return data;
         }
 

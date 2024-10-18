@@ -14,11 +14,11 @@ namespace WebApplication1.Repository
             _connectionString = connectionString;
         }
 
-        public string AddNotification(Notifications notifications)
+        public async Task<string> AddNotification(Notifications notifications)
         {
             using (var connection = new SqlConnection(_connectionString))
             {
-                connection.Open();
+                await connection.OpenAsync();
                 var command = connection.CreateCommand();
                 command.CommandText = @"
                             INSERT INTO Notification(id, RentedId, RentedQuantity, movieId, UserId, RequestDate, Status) 
@@ -38,11 +38,11 @@ namespace WebApplication1.Repository
         }
 
 
-        public List<Notifications> GetNotifications()
+        public async Task<List<Notifications>> GetNotifications()
         {
             using (var connection = new SqlConnection(_connectionString))
             {
-                connection.Open();
+                await connection.OpenAsync();
                 var command = connection.CreateCommand();
                 command.CommandText = @"SELECT * FROM  Notification";
                 var notifications = new List<Notifications>();
@@ -72,11 +72,11 @@ namespace WebApplication1.Repository
 
 
 
-        public string DeleteNotification(Guid notificationId)
+        public async Task<string> DeleteNotification(Guid notificationId)
         {
             using (var connection = new SqlConnection(_connectionString))
             {
-                connection.Open();
+                await connection.OpenAsync();
                 var command = connection.CreateCommand();
                 command.CommandText = @"
                                         DELETE Notification
@@ -89,11 +89,11 @@ namespace WebApplication1.Repository
         }
 
 
-        public string UpdateNotification(Notifications notifications)
+        public async Task<string> UpdateNotification(Notifications notifications)
         {
             using (var connection = new SqlConnection(_connectionString))
             {
-                connection.Open();
+                await connection.OpenAsync();
                 var command = connection.CreateCommand();
                 command.CommandText = @"
                                         UPDATE Notification

@@ -5,10 +5,10 @@ namespace WebApplication1.IService
 {
     public interface INotificationService
     {
-        string AddNotification(NotificationRequest notification);
-        List<NotificationResponse> GetNotifications();
-        string DeleteNotification(Guid notificationId);
-        string UpdateNotification(NotificationRequest notificationRequest, Guid notificationId);
+        Task<string> AddNotification(NotificationRequest notification);
+        Task<List<NotificationResponse>> GetNotifications();
+        Task<string> DeleteNotification(Guid notificationId);
+        Task<string> UpdateNotification(NotificationRequest notificationRequest, Guid notificationId);
 
     }
 }
